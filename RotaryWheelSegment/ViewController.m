@@ -18,6 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navigationItem.title=@"Wheel Segment";
     int limit  = [self getRandomNumberWithRange:25 rangeValue:40];
     wheel = [[RotaryWheel alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)  andDelegate:self withSections:8 rotationLimit:limit];
     
